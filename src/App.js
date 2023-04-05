@@ -18,4 +18,8 @@ function handleSubmit(event) {
     alert(`El curso ${newCourseText} ya existe en el listado, por favor ingrese un curso no existente.`);
     return;
   }
-}
+  const newCourses = [...courses, { id: courses.length + 1, text: newCourseText }];
+  setCourses(newCourses);
+
+  setNewCourse('');
+  }
