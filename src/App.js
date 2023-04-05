@@ -14,4 +14,8 @@ function handleSubmit(event) {
   if (!newCourse) return;
   const newCourseText = newCourse.toUpperCase();
   const courseExists = courses.find((course) => course.text === newCourseText);
+  if (courseExists) {
+    alert(`El curso ${newCourseText} ya existe en el listado, por favor ingrese un curso no existente.`);
+    return;
+  }
 }
