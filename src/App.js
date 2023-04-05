@@ -11,4 +11,5 @@ function CourseList() {
 
 function handleSubmit(event) {
   event.preventDefault()
+  if (!newCourse) return;
 }
