@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  color: #000000;
+  padding: 10px 0;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinear verticalmente el texto y los botones */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+button {
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff1100;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;  
+}
+
+button:hover {
+  background-color: #ff1100;
+}
+
+form {
+  margin-top: 20px;
+  max-width: 400px; /* Cambia este valor para ajustar el ancho del formulario */
+  width: 100%;
+}
+
+form input[type="text"] {
+  border: 1px solid #000000;
+}
+
+label {
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #09a311;
+}
+
+button[type="submit"]:hover {
+  background-color: #09a311;
+}
