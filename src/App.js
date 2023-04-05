@@ -8,3 +8,7 @@ function CourseList() {
   ]);
   const [newCourse, setNewCourse] = useState('');
 }
+
+function handleSubmit(event) {
+  event.preventDefault()
+}
