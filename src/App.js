@@ -23,3 +23,7 @@ function handleSubmit(event) {
 
   setNewCourse('');
   }
+  function handleDeleteCourse(courseId) {
+    const newCourses = courses.filter((course) => course.id !== courseId);
+    setCourses(newCourses);
+  }
