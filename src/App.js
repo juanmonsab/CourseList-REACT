@@ -7,7 +7,6 @@ function CourseList() {
     { id: 3, text: 'CURSO 3' },
   ]);
   const [newCourse, setNewCourse] = useState('');
-}
 
 function handleSubmit(event) {
   event.preventDefault()
@@ -20,13 +19,13 @@ function handleSubmit(event) {
   }
   const newCourses = [...courses, { id: courses.length + 1, text: newCourseText }];
   setCourses(newCourses);
-
   setNewCourse('');
   }
   function handleDeleteCourse(courseId) {
     const newCourses = courses.filter((course) => course.id !== courseId);
     setCourses(newCourses);
   }
+  
   return (
     <div>
       <h1>Listado de Cursos:</h1>
@@ -47,3 +46,4 @@ function handleSubmit(event) {
       </form>
     </div>
   ); 
+}
