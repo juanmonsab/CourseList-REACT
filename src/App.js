@@ -25,7 +25,7 @@ function handleSubmit(event) {
     const newCourses = courses.filter((course) => course.id !== courseId);
     setCourses(newCourses);
   }
-  
+
   return (
     <div>
       <h1>Listado de Cursos:</h1>
@@ -47,3 +47,4 @@ function handleSubmit(event) {
     </div>
   ); 
 }
+export default CourseList;
